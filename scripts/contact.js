@@ -4,8 +4,10 @@ const btn = form.querySelector(".contact-btn");
 /* ── Validation helpers ─────────────────────────────────────── */
 function getError(input) {
   if (input.validity.valueMissing) return "This field is required.";
-  if (input.type === "email" && input.validity.typeMismatch)
+  // Para o campo de e-mail, valide o formato apenas se um valor for inserido
+  if (input.type === "email" && input.value.trim() !== '' && input.validity.typeMismatch) {
     return "Please enter a valid email address.";
+  }
   return "";
 }
 
@@ -21,13 +23,19 @@ function setFieldState(input, error) {
     msg.className = "field-msg field-msg--error";
     msg.textContent = error;
     group.appendChild(msg);
-  } else {
+  } else { // Sem erro
     input.classList.remove("input-error");
-    input.classList.add("input-valid");
-    const msg = document.createElement("span");
-    msg.className = "field-msg field-msg--valid";
-    msg.textContent = "Looks good!";
-    group.appendChild(msg);
+    // Se o campo for opcional e estiver vazio, não mostre 'Looks good!'
+    if (input.value.trim() === '' && !input.required) {
+      input.classList.remove("input-valid");
+      // Nenhuma mensagem é necessária para campos opcionais vazios
+    } else {
+      input.classList.add("input-valid");
+      const msg = document.createElement("span");
+      msg.className = "field-msg field-msg--valid";
+      msg.textContent = "Looks good!";
+      group.appendChild(msg);
+    }
   }
 }
 
@@ -35,14 +43,20 @@ function setFieldState(input, error) {
 form.querySelectorAll("input, textarea").forEach((input) => {
   input.addEventListener("blur", () => {
     const error = getError(input);
-    if (input.value.trim() === "" && !input.required) return;
+    // Se um campo opcional estiver vazio ao perder o foco, limpe qualquer estado e retorne
+    if (input.value.trim() === "" && !input.required) {
+      setFieldState(input, ""); // Limpa qualquer estado anterior
+      return;
+    }
     setFieldState(input, error);
   });
 
   input.addEventListener("input", () => {
     if (input.classList.contains("input-error")) {
       const error = getError(input);
-      if (!error) setFieldState(input, "");
+      // Se o campo for opcional e estiver vazio, limpe o estado. Caso contrário, atualize o estado.
+      if (input.value.trim() === "" && !input.required) setFieldState(input, "");
+      else setFieldState(input, error);
     }
   });
 });
@@ -52,9 +66,6 @@ form.addEventListener("submit", (e) => {
   e.preventDefault();
 
   let hasError = false;
-  const name = form.querySelector("#contactName").value;
-  const email = form.querySelector("#contactEmail").value;
-  const message = form.querySelector("#contactMessage").value;
 
   form.querySelectorAll("input, textarea").forEach((input) => {
     const error = getError(input);
@@ -65,6 +76,10 @@ form.addEventListener("submit", (e) => {
   });
   if (hasError) return;
 
+  const name = form.querySelector("#contactName").value;
+  const message = form.querySelector("#contactMessage").value;
+
+  // Obtenha os valores após a validação
   /* Loading state */
   btn.disabled = true;
   btn.classList.add("btn--loading");

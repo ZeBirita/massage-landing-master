@@ -144,7 +144,7 @@
   stroke: var(--color-primary);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 950px) {
   .services {
     padding: 48px 4%;
   }

@@ -230,7 +230,7 @@
   color: var(--color-accent);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 950px) {
   .footer-main {
     grid-template-columns: 1fr 1fr;
   }

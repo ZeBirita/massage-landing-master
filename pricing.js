@@ -4,7 +4,7 @@ const contactMessageTextarea = document.getElementById('contactMessage');
 const contactNameInput = document.getElementById('contactName');
 
 if (pricingButtons.length && contactSection && contactMessageTextarea && contactNameInput) {
-  const generatedMessageTemplate = 'Olá! Tenho interesse em agendar uma sessão de ';
+  const generatedMessageTemplate = 'Tenho interesse em agendar uma sessão de ';
 
   pricingButtons.forEach(button => {
     button.addEventListener('click', event => {

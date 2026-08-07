@@ -220,7 +220,7 @@
   to   { opacity: 1; transform: translateY(0); }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 950px) {
   .contact-body {
     grid-template-columns: 1fr;
     gap: 2.5rem;
