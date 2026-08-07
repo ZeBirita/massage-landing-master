@@ -1,0 +1,762 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Saúde & Bem-Estar - Ariane Nunes. Massoterapia profissional em Portimão. Agende uma sessão para relaxamento, alívio da dor e bem-estar."
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#2f3a34" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Saúde & Bem-Estar - Ariane Nunes" />
+    <meta
+      property="og:description"
+      content="Massoterapia profissional em Portimão. Agende uma sessão para relaxamento, alívio da dor e bem-estar."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://massage-landing-five.vercel.app/images/preview/hero-preview.jpg"
+    />
+    <meta
+      property="og:url"
+      content="https://massage-landing-five.vercel.app/"
+    />
+
+    <title>Saúde & Bem-Estar - Ariane Nunes</title>
+    <link
+      rel="preload"
+      as="image"
+      href="images/services/Swedish.avif"
+      type="image/avif"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="icons/favicon-16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="icons/favicon-32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="48x48"
+      href="icons/favicon-48.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="icons/apple-touch-icon.png"
+    />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/navbar.css" />
+    <link rel="stylesheet" href="styles/hero.css" />
+    <link rel="stylesheet" href="styles/about.css" />
+    <link rel="stylesheet" href="styles/services.css" />
+    <link rel="stylesheet" href="styles/benefits.css" />
+    <link rel="stylesheet" href="styles/testimonials.css" />
+    <link rel="stylesheet" href="styles/pricing.css" />
+    <link rel="stylesheet" href="styles/faq.css" />
+    <link rel="stylesheet" href="styles/contact.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+    <link rel="stylesheet" href="styles/back-to-top.css" />
+  </head>
+  <body>
+    <!-- ── Navbar ──────────────────────────────────────────────── -->
+    <nav class="navbar" id="navbar">
+      <a href="#" class="nav-logo">
+        <img
+          src="images/logos/Serenity-01.svg"
+          alt="Serenity"
+          class="nav-logo-img"
+        />
+      </a>
+      <button class="nav-hamburger" id="hamburger" aria-label="Alternar menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">Sobre</a></li>
+        <li><a href="#services">Serviços</a></li>
+        <li><a href="#pricing">Preços</a></li>
+        <li><a href="#contact">Contato</a></li>
+        <li class="nav-cta-mobile"><a href="#contact">Agende Agora</a></li>
+      </ul>
+      <a href="#contact" class="nav-cta">Agende Agora</a>
+    </nav>
+
+    <!-- ── Hero ────────────────────────────────────────────────── -->
+    <section class="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="hero-eyebrow">Relaxe &#183; Recupere &#183; Reconecte</p>
+        <h1 class="hero-heading">Saúde & Bem-Estar<br />Ariane Nunes</h1>
+        <p class="hero-sub">
+          Experimente o máximo em relaxamento e cura com nossos serviços
+          especializados de massoterapia.
+        </p>
+        <a href="#pricing" class="hero-cta">Massagens</a>
+      </div>
+    </section>
+
+    <!-- ── About ───────────────────────────────────────────────── -->
+    <section class="about" id="about">
+      <div class="about-text">
+        <h2>Sobre a terapeuta</h2>
+        <p>
+          Com mais de uma década de experiência, nossa terapeuta certificada
+          traz experiência e cuidado genuíno a cada sessão. Se você busca
+          alívio de dores crônicas, recuperação de lesões ou simplesmente
+          precisa relaxar, cada tratamento é personalizado para suas
+          necessidades únicas — para que você saia se sentindo restaurado,
+          equilibrado e à vontade.
+        </p>
+      </div>
+      <img
+        class="about-image"
+        src="images/ui/therapist-image.webp"
+        alt="Massoterapeuta em ação"
+        loading="lazy"
+      />
+    </section>
+
+    <!-- ── Services ────────────────────────────────────────────── -->
+    <section class="services" id="services">
+      <div class="services-header">
+        <h2>Serviços de Massagem</h2>
+        <p>
+          Do relaxamento profundo ao alívio direcionado, cada tratamento é
+          personalizado para o seu corpo e seus objetivos.
+        </p>
+      </div>
+      <div class="slider-wrapper">
+        <button class="slider-arrow prev" id="slidePrev" aria-label="Anterior">
+          <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6" /></svg>
+        </button>
+        <div class="services-track" id="servicesTrack">
+          <div class="service-slide">
+            <img
+              src="images/services/Swedish.avif"
+              alt="Swedish Massage"
+              fetchpriority="high"
+            />
+            <div class="slide-content">
+              <h3>Massagem Sueca</h3>
+              <p>
+                Uma massagem suave e fluida que promove o relaxamento de corpo
+                inteiro e alivia a tensão muscular.
+              </p>
+              <a href="#pricing" class="slide-btn">Preços</a>
+            </div>
+          </div>
+          <div class="service-slide">
+            <img
+              src="images/services/Deep-tissue.avif"
+              alt="Deep Tissue Massage"
+            />
+            <div class="slide-content">
+              <h3>Tecido Profundo</h3>
+              <p>
+                Visa as camadas mais profundas do músculo para liberar a tensão
+                crônica e tratar pontos de dor persistentes.
+              </p>
+              <a href="#pricing" class="slide-btn">Preços</a>
+            </div>
+          </div>
+          <div class="service-slide">
+            <img
+              src="images/services/Hot-stone.avif"
+              alt="Hot Stone Massage"
+            />
+            <div class="slide-content">
+              <h3>Pedras Quentes</h3>
+              <p>
+                Pedras de basalto quentes derretem a tensão enquanto o calor
+                penetra profundamente nos músculos.
+              </p>
+              <a href="#pricing" class="slide-btn">Preços</a>
+            </div>
+          </div>
+          <div class="service-slide">
+            <img
+              src="images/services/Sport.avif"
+              alt="Sports Massage"
+            />
+            <div class="slide-content">
+              <h3>Massagem Desportiva</h3>
+              <p>
+                Ajuda na recuperação, previne lesões e melhora o desempenho
+                para indivíduos ativos.
+              </p>
+              <a href="#pricing" class="slide-btn">Preços</a>
+            </div>
+          </div>
+        </div>
+        <button class="slider-arrow next" id="slideNext" aria-label="Próximo">
+          <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6" /></svg>
+        </button>
+      </div>
+      <p class="slider-counter" id="sliderCounter">1 / 4</p>
+    </section>
+
+    <!-- ── Benefits ────────────────────────────────────────────── -->
+    <section class="benefits" id="benefits">
+      <div class="benefits-header">
+        <h2>Por Que Nos Escolher</h2>
+      </div>
+      <div class="benefits-grid">
+        <div class="benefit-item">
+          <div class="benefit-icon">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 5.281-5.191 1.312 0 4.151.501 5.719 4.457 1.59-3.968 4.464-4.447 5.726-4.447 2.54 0 5.274 1.621 5.274 5.181 0 4.069-5.136 8.625-11 14.402z"
+              />
+            </svg>
+          </div>
+          <h3>Cuidado Personalizado</h3>
+          <p>
+            Cada sessão é adaptada às suas necessidades, objetivos e nível de
+            conforto específicos.
+          </p>
+        </div>
+        <div class="benefit-item">
+          <div class="benefit-icon">
+            <svg viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="10" />
+              <path d="M12 6v6l4 2" />
+            </svg>
+          </div>
+          <h3>Agendamento Flexível</h3>
+          <p>
+            Agende compromissos que se encaixem no seu estilo de vida, com
+            disponibilidade à noite e aos fins de semana.
+          </p>
+        </div>
+        <div class="benefit-item">
+          <div class="benefit-icon">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+              />
+            </svg>
+          </div>
+          <h3>Terapeutas Certificados</h3>
+          <p>
+            Nossa equipe possui certificações profissionais e traz anos de
+            experiência prática.
+          </p>
+        </div>
+        <div class="benefit-item">
+          <div class="benefit-icon">
+            <svg viewBox="0 0 24 24">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+              <polyline points="9 22 9 12 15 12 15 22" />
+            </svg>
+          </div>
+          <h3>Ambiente Tranquilo</h3>
+          <p>
+            Um espaço calmo e acolhedor, projetado para ajudá-lo a relaxar
+            totalmente desde o momento em que chega.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Testimonials ─────────────────────────────────────────── -->
+    <section class="testimonials" id="testimonials">
+      <div class="testimonials-header">
+        <h2>Experiências dos Clientes</h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-item">
+          <div class="testimonial-avatar">
+            <img
+              src="images/profile-photos/Sophia-L..png"
+              alt="Sophia L."
+              loading="lazy"
+            />
+          </div>
+          <blockquote>
+            <img
+              class="quote-icon"
+              src="images/ui/quote-image.avif"
+              alt="Citação"
+              loading="lazy"
+            />"Absolutamente a melhor massagem que já recebi. Cheguei com uma
+            dor nas costas terrível e saí me sentindo completamente renovada. A terapeuta sabia exatamente onde trabalhar."
+          </blockquote>
+          <cite>Sarah M.</cite>
+        </div>
+        <div class="testimonial-item">
+          <div class="testimonial-avatar">
+            <img
+              src="images/profile-photos/Daniel-M..png"
+              alt="Daniel M."
+              loading="lazy"
+            />
+          </div>
+          <blockquote>
+            <img
+              class="quote-icon"
+              src="images/ui/quote-image.avif"
+              alt="Citação"
+              loading="lazy"
+            />"Venho aqui todos os meses há um ano. A massagem com pedras
+            quentes é a minha favorita — profundamente relaxante e a atmosfera é muito tranquila. Recomendo vivamente."
+          </blockquote>
+          <cite>James R.</cite>
+        </div>
+        <div class="testimonial-item">
+          <div class="testimonial-avatar">
+            <img
+              src="images/profile-photos/Emma-R..png"
+              alt="Emma R."
+              loading="lazy"
+            />
+          </div>
+          <blockquote>
+            <img
+              class="quote-icon"
+              src="images/ui/quote-image.avif"
+              alt="Citação"
+              loading="lazy"
+            />"Como alguém que treina regularmente, a massagem desportiva tem
+            sido um divisor de águas para a minha recuperação. Profissional, atenciosa e sempre adaptada ao que o meu corpo precisa."
+          </blockquote>
+          <cite>Olivia T.</cite>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Pricing ──────────────────────────────────────────────── -->
+    <section class="pricing" id="pricing">
+      <div class="pricing-header">
+        <h2>Preços</h2>
+        <p>
+          Escolha a sessão que melhor se adapta às suas necessidades. Todos os
+          tratamentos incluem uma consulta gratuita.
+        </p>
+      </div>
+      <div class="pricing-grid">
+        <div class="pricing-card popular">
+          <span class="pricing-badge">Mais Popular</span>
+          <h3>Massagem Sueca</h3>
+          <p class="pricing-desc">Relaxamento de corpo inteiro e alívio do estresse.</p>
+          <ul class="pricing-options">
+            <li>
+              <span class="duration">30 min</span><span class="price">€35</span>
+            </li>
+            <li>
+              <span class="duration">60 min</span><span class="price">€55</span>
+            </li>
+            <li>
+              <span class="duration">90 min</span><span class="price">€75</span>
+            </li>
+          </ul>
+          <a href="#contact" class="pricing-btn">Agende Agora</a>
+        </div>
+
+        <div class="pricing-card">
+          <h3>Tecido Profundo</h3>
+          <p class="pricing-desc">
+            Alívio da tensão crônica visando as camadas musculares mais profundas.
+          </p>
+          <ul class="pricing-options">
+            <li>
+              <span class="duration">30 min</span><span class="price">€40</span>
+            </li>
+            <li>
+              <span class="duration">60 min</span><span class="price">€65</span>
+            </li>
+            <li>
+              <span class="duration">90 min</span><span class="price">€85</span>
+            </li>
+          </ul>
+          <a href="#contact" class="pricing-btn">Agende Agora</a>
+        </div>
+
+        <div class="pricing-card">
+          <h3>Pedras Quentes</h3>
+          <p class="pricing-desc">
+            Calor profundo e relaxamento com pedras de basalto aquecidas.
+          </p>
+          <ul class="pricing-options">
+            <li>
+              <span class="duration">60 min</span><span class="price">€70</span>
+            </li>
+            <li>
+              <span class="duration">90 min</span><span class="price">€90</span>
+            </li>
+          </ul>
+          <a href="#contact" class="pricing-btn">Agende Agora</a>
+        </div>
+
+        <div class="pricing-card">
+          <h3>Massagem Desportiva</h3>
+          <p class="pricing-desc">
+            Recuperação e desempenho para indivíduos ativos.
+          </p>
+          <ul class="pricing-options">
+            <li>
+              <span class="duration">30 min</span><span class="price">€40</span>
+            </li>
+            <li>
+              <span class="duration">60 min</span><span class="price">€65</span>
+            </li>
+            <li>
+              <span class="duration">90 min</span><span class="price">€85</span>
+            </li>
+          </ul>
+          <a href="#contact" class="pricing-btn">Agende Agora</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── FAQ ──────────────────────────────────────────────────── -->
+    <section class="faq" id="faq">
+      <div class="faq-header">
+        <h2>Perguntas Frequentes</h2>
+        <p>Tudo o que você precisa saber antes de agendar sua primeira sessão.</p>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Qual é a diferença entre a massagem Sueca e a de Tecido Profundo?
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <polyline points="6 9 12 15 18 9" />
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <p>
+              A Massagem Sueca usa movimentos longos e fluidos para promover o
+              relaxamento de todo o corpo e melhorar a circulação — ideal se
+              você é novo em massagens ou procura relaxar. A de Tecido Profundo
+              visa as camadas mais profundas dos músculos e do tecido
+              conjuntivo usando pressão mais lenta e firme, tornando-a mais
+              adequada para tensão crônica, rigidez ou áreas problemáticas
+              específicas. Se não tiver certeza, nossos terapeutas o ajudarão a
+              escolher durante sua consulta.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            O que devo esperar durante a minha primeira visita?
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <polyline points="6 9 12 15 18 9" />
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Chegue alguns minutos mais cedo para preencher um breve
+              questionário de saúde. Seu terapeuta irá explicar o plano de
+              tratamento, responder a quaisquer perguntas e garantir que você
+              esteja confortável o tempo todo. Após a sessão, você terá tempo
+              para descansar antes de sair.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Com que frequência devo fazer uma massagem?
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <polyline points="6 9 12 15 18 9" />
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Para relaxamento geral e alívio do estresse, uma ou duas vezes
+              por mês é o ideal. Se você estiver tratando um problema
+              específico, como dor crônica ou recuperação desportiva, sessões
+              semanais podem ser recomendadas inicialmente. Seu terapeuta irá
+              aconselhar com base em suas necessidades individuais.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            A massagem com pedras quentes é adequada para todos?
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <polyline points="6 9 12 15 18 9" />
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <p>
+              A massagem com pedras quentes é profundamente relaxante, mas não é
+              adequada para todos. Aconselhamos contra se você tiver problemas
+              cardiovasculares, diabetes, sensibilidades de pele ou estiver
+              grávida. Por favor, informe-nos sobre quaisquer condições de saúde
+              ao agendar e nossos terapeutas confirmarão se é apropriado para
+              você ou sugerirão uma alternativa.
+            </p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            Qual é a sua política de cancelamento?
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <polyline points="6 9 12 15 18 9" />
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <p>
+              Pedimos um aviso de pelo menos 24 horas para cancelamentos ou
+              reagendamentos. Cancelamentos tardios ou não comparecimento podem
+              estar sujeitos a uma taxa de cancelamento de 50% do preço da
+              sessão. Entendemos que imprevistos acontecem — por favor, entre
+              em contato conosco o mais breve possível se seus planos mudarem.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Contact ──────────────────────────────────────────────── -->
+    <section class="contact" id="contact">
+      <div class="contact-header">
+        <h2>Entre em Contato</h2>
+      </div>
+      <div class="contact-body">
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+            </div>
+            <div>
+              <h3>Endereço</h3>
+              <p>Rua Sidónio Pais, Ed. São Francisco, Loja A<br />Portimão - 8500-735</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.82a16 16 0 0 0 6.29 6.29l.96-.96a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"
+                />
+              </svg>
+            </div>
+            <div>
+              <h3>Telefone</h3>
+              <p><a href="tel:+351910526079">(+351) 910 526 079</a></p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+            </div>
+            <div>
+              <h3>Email</h3>
+              <p>
+                <a href="mailto:nunes.ariane.nunes@gmail.com"
+                  >nunes.ariane.nunes@gmail.com</a
+                >
+              </p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M12 6v6l4 2" />
+              </svg>
+            </div>
+            <div>
+              <h3>Horário de Funcionamento</h3>
+              <p>Seg – Sex: 9h – 20h<br />Sáb – Dom: 10h – 18h</p>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form" novalidate>
+          <div class="form-group">
+            <label for="contactName">Nome</label>
+            <input
+              type="text"
+              id="contactName"
+              name="name"
+              placeholder="Maria Nunes"
+              autocomplete="name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="contactEmail">Email</label>
+            <input
+              type="email"
+              id="contactEmail"
+              name="email"
+              placeholder="maria@example.com"
+              autocomplete="email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="contactMessage">Mensagem</label>
+            <textarea
+              id="contactMessage"
+              name="message"
+              rows="5"
+              placeholder="Conte-nos sobre suas necessidades ou o horário de consulta de sua preferência…"
+              autocomplete="off"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="contact-btn">Enviar Mensagem</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- ── Footer ───────────────────────────────────────────────── -->
+    <footer class="footer">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <a href="#" class="footer-logo">
+            <img
+              src="images/logos/Serenity-white-01.svg"
+              alt="Serenity"
+              class="footer-logo-img"
+            />
+          </a>
+          <p class="footer-tagline">Restaure. Equilibre. Renove.</p>
+          <a
+            href="https://github.com/spolivin/massage-landing"
+            target="_blank"
+            rel="noopener"
+            class="footer-github"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.34-3.369-1.34-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836a9.59 9.59 0 0 1 2.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.741 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"
+              />
+            </svg>
+            GitHub
+          </a>
+          <div class="footer-stack">
+            <span class="footer-stack-label">Construído com</span>
+            <div class="footer-stack-icons">
+              <span class="footer-stack-icon" data-tooltip="HTML5">
+                <svg viewBox="0 0 24 24" aria-label="HTML5" role="img">
+                  <path
+                    d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z"
+                  />
+                </svg>
+              </span>
+              <span class="footer-stack-icon" data-tooltip="CSS3">
+                <svg viewBox="0 0 24 24" aria-label="CSS3" role="img">
+                  <path
+                    d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.288l5.373-1.53L18.59 4.414z"
+                  />
+                </svg>
+              </span>
+              <span class="footer-stack-icon" data-tooltip="JavaScript">
+                <svg viewBox="0 0 24 24" aria-label="JavaScript" role="img">
+                  <path
+                    d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <nav class="footer-nav" aria-label="Navegação do rodapé">
+          <a href="#about">Sobre</a>
+          <a href="#services">Serviços</a>
+          <a href="#pricing">Preços</a>
+          <a href="#contact">Contato</a>
+        </nav>
+
+        <div class="footer-info">
+          <p>Rua Sidónio Pais, Ed. São Francisco, Loja A, Portimão</p>
+          <p><a href="tel:+351910526079">(+351) 910 526 079</a></p>
+          <p>
+            <a href="mailto:nunes.ariane.nunes@gmail.com"
+              >nunes.ariane.nunes@gmail.com</a
+            >
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-credits"></div>
+        <a href="#" class="footer-top-link">Voltar ao topo</a>
+      </div>
+    </footer>
+
+    <button id="backToTop" class="back-to-top" aria-label="Voltar ao topo">
+      <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <polyline points="18 15 12 9 6 15" />
+      </svg>
+    </button>
+
+    <script src="scripts/navbar.js" defer></script>
+    <script src="scripts/slider.js" defer></script>
+    <script src="scripts/animations.js" defer></script>
+    <script src="scripts/back-to-top.js" defer></script>
+    <script src="scripts/faq.js" defer></script>
+    <script src="scripts/contact.js" defer></script>
+    <script src="scripts/pricing.js" defer></script>
+  </body>
+</html>

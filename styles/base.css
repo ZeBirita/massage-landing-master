@@ -1,0 +1,69 @@
+/* ── Fonts ─────────────────────────────────────────────────── */
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/montserrat-v31-latin-regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/montserrat-v31-latin-500.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/montserrat-v31-latin-800.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/montserrat-v31-latin-900.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ── Design tokens ─────────────────────────────────────────── */
+:root {
+  --color-accent: #c9a96e;
+  --color-primary: #2f3a34;
+  --color-bg-warm: #f3ecdc;
+  --color-border: #e8dfd0;
+  --color-error: #c0392b;
+  --color-success: #27ae60;
+
+  --font-size-heading: clamp(1.8rem, 3.5vw, 2.6rem);
+
+  --radius-pill: 100px;
+  --radius-card: 8px;
+
+  --transition-base: 0.2s;
+
+  --font-family: "Montserrat", sans-serif;
+}
+
+/* ── Reset & Base ──────────────────────────────────────────── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: var(--font-family);
+  font-weight: 400;
+  color: #1a1a1a;
+  background: #fff;
+}
