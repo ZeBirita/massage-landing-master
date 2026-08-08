@@ -37,9 +37,22 @@
   <link rel="stylesheet" href="styles/back-to-top.css" />
   <style>
     /* Para aumentar o logo no menu de navegação */
+    .nav-logo {
+      /* Permite que o logo encolha para caber em telas pequenas */
+      flex-shrink: 1;
+      min-width: 50px;
+      /* Evita que o logo fique pequeno demais */
+    }
+
     .nav-logo-img {
       height: 75px;
       /* Ajuste este valor para o tamanho desejado */
+      max-height: 75px;
+      /* A altura passa a ser máxima, permitindo que diminua */
+      width: 100%;
+      /* Faz a imagem ocupar o espaço do seu contêiner */
+      height: auto;
+      /* Mantém a proporção correta da imagem */
     }
 
     /* Para aumentar o logo no rodapé */
@@ -136,11 +149,11 @@
       </button>
       <div class="services-track" id="servicesTrack">
         <div class="service-slide">
-          <img src="images/services/Swedish.avif" alt="Swedish Massage" fetchpriority="high" />
+          <img src="images/services/Massagem-linfatica.jpg" alt="Drenagem Linfática" fetchpriority="high" />
           <div class="slide-content">
-            <h3>Massagem Relaxante</h3>
+            <h3>Drenagem Linfática</h3>
             <p>
-              Uma Massagem para aliviar a tensão, reduzir o estresse e promover o relaxamento geral.
+              Ideal para a desintoxicação e redução do inchaço.
             </p>
             <a href="#pricing" class="slide-btn">Preços</a>
           </div>
@@ -151,6 +164,16 @@
             <h3>Massagem Modeladora</h3>
             <p>
               Ajuda na redução de medidas e melhora o aspecto da celulite, melhorando seu corpo e autoestima.
+            </p>
+            <a href="#pricing" class="slide-btn">Preços</a>
+          </div>
+        </div>
+        <div class="service-slide">
+          <img src="images/services/Swedish.avif" alt="Swedish Massage" fetchpriority="high" />
+          <div class="slide-content">
+            <h3>Massagem Relaxante</h3>
+            <p>
+              Uma Massagem para aliviar a tensão, reduzir o estresse e promover o relaxamento geral.
             </p>
             <a href="#pricing" class="slide-btn">Preços</a>
           </div>
@@ -271,7 +294,8 @@
         </div>
         <blockquote>
           <img class="quote-icon" src="images/ui/quote-image.avif" alt="Citação" loading="lazy" />"A massagem com pedras
-          quentes é a minha favorita, profundamente relaxante e a atmosfera é muito tranquila, sem falar que a terapeuta é excepcional. Recomendo vivamente."
+          quentes é a minha favorita, profundamente relaxante e a atmosfera é muito tranquila, sem falar que a terapeuta
+          é excepcional. Recomendo vivamente."
         </blockquote>
         <cite>James R.</cite>
       </div>

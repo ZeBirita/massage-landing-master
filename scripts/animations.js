@@ -29,7 +29,10 @@ function animateCards(sectionId, cardSelector) {
         observer.disconnect();
       }
     },
-    { threshold: 0.2 },
+    {
+      /* Um threshold mais baixo (0.01) garante que a animação dispare mesmo que apenas uma pequena parte da seção esteja visível no carregamento da página. Isso corrige o problema em dispositivos onde o cálculo da interseção no carregamento inicial falhava com um threshold mais alto. */
+      threshold: 0.01,
+    },
   );
 
   observer.observe(section);

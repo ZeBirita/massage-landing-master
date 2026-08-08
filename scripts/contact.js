@@ -3,10 +3,10 @@ const btn = form.querySelector(".contact-btn");
 
 /* ── Validation helpers ─────────────────────────────────────── */
 function getError(input) {
-  if (input.validity.valueMissing) return "This field is required.";
+  if (input.validity.valueMissing) return "Este campo é obrigatório.";
   // Para o campo de e-mail, valide o formato apenas se um valor for inserido
   if (input.type === "email" && input.value.trim() !== '' && input.validity.typeMismatch) {
-    return "Please enter a valid email address.";
+    return "Por favor, insira um e-mail válido ou deixe em branco.";
   }
   return "";
 }
@@ -33,7 +33,7 @@ function setFieldState(input, error) {
       input.classList.add("input-valid");
       const msg = document.createElement("span");
       msg.className = "field-msg field-msg--valid";
-      msg.textContent = "Looks good!";
+      msg.textContent = "Ótimo!";
       group.appendChild(msg);
     }
   }
@@ -77,6 +77,7 @@ form.addEventListener("submit", (e) => {
   if (hasError) return;
 
   const name = form.querySelector("#contactName").value;
+  const email = form.querySelector("#contactEmail").value;
   const message = form.querySelector("#contactMessage").value;
 
   // Obtenha os valores após a validação
@@ -101,7 +102,10 @@ form.addEventListener("submit", (e) => {
     // Redirect to WhatsApp
     setTimeout(() => {
       const phone = "351910526079";
-      const whatsappMessage = `Olá, meu nome é ${name}.\n\n${message}`;
+      let whatsappMessage = `Olá! Meu nome é ${name}.\n\n${message}`;
+      if (email) {
+        whatsappMessage += `\n\nMeu email para contato é: ${email}`;
+      }
       const whatsappUrl = `https://wa.me/${phone}?text=${encodeURIComponent(
         whatsappMessage
       )}`;

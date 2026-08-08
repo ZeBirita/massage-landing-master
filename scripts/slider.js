@@ -14,11 +14,16 @@ function goTo(index) {
     behavior: "smooth",
   });
   counter.textContent = `${current + 1} / ${total}`;
-  prevBtn.disabled = current === 0;
-  nextBtn.disabled = current === total - 1;
 }
 
-prevBtn.addEventListener("click", () => goTo(current - 1));
-nextBtn.addEventListener("click", () => goTo(current + 1));
+prevBtn.addEventListener("click", () => {
+  const newIndex = (current - 1 + total) % total;
+  goTo(newIndex);
+});
+
+nextBtn.addEventListener("click", () => {
+  const newIndex = (current + 1) % total;
+  goTo(newIndex);
+});
 
 goTo(0);
