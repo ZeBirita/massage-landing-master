@@ -1,8 +1,8 @@
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="images/logos/Serenity-white-01.svg" />
-  <img src="images/logos/Serenity-01.svg" alt="Serenity Massage" width="420" />
+  <source media="(prefers-color-scheme: dark)" srcset="Logo-ArianeNunes.png" />
+  <img src="Logo-ArianeNunes.png" alt="Ariane Terapeuta" width="420" />
 </picture>
 
 <p><strong>A responsive, single-page marketing site for a fictional massage therapy studio — built with plain HTML, CSS, and vanilla JavaScript. No frameworks, no build tools, no dependencies.</strong></p>
