@@ -30,10 +30,10 @@
 
 /* ── Design tokens ─────────────────────────────────────────── */
 :root {
-  --color-accent: #c9a96e;
-  --color-primary: #2f3a34;
-  --color-bg-warm: #f3ecdc;
-  --color-border: #e8dfd0;
+  --color-accent: #cecadb;
+  --color-primary: #1f551f;
+  --color-bg-warm: #1f551f;
+  --color-border: #f3dc0c;
   --color-error: #c0392b;
   --color-success: #27ae60;
 

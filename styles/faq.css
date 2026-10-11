@@ -12,7 +12,7 @@
 .faq-header h2 {
   font-size: var(--font-size-heading);
   font-weight: 800;
-  color: var(--color-primary);
+  color: #fff;
   margin-bottom: 0.8rem;
 }
 
@@ -20,7 +20,7 @@
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.7;
-  color: var(--color-primary);
+  color: #fff;
   max-width: 520px;
   margin: 0 auto;
 }
